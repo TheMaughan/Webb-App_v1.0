@@ -1,0 +1,53 @@
+<head>
+    <title>Inventory Control</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+    </head>
+    
+    <body>
+    <a href="./invite.html">Invite</a>
+    
+    <h1>Inventory Control</h1>
+    
+    <p><strong>Total Items in Inventory:</strong> {{inv_total}}</p>
+    <p><strong>Total Inventory Value:</strong> ${{inv_total_value|floatformat:2}}</p>
+    
+    <table>
+        <tr>
+            <th>Item ID</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+        {% for item in inv_list %}
+            {% if item.hazardous %}
+                <tr style="background-color:ff8566">
+            {% else %}
+                <tr>
+            {% endif %}
+                <td>{{item.item_id}}</td>
+                <td><a href="{% url 'display' item.item_id %}">{{item.description}}</a></td>
+                <td>${{item.value|floatformat:2}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <p><strong>Add New Inventory</strong></p>
+    <form action="{% url 'add' %}">
+    Item ID: <input type="text" name="item_id"><br>
+    Description: <input type="text" name="description"><br>
+    Value: <input type="text" name="value"><br>
+    Hazardous: <input type="radio" name="hazardous" value="Yes">Yes
+    <input type="radio" name="hazardous" value="No" checked>No<br>
+    <input type="submit" value="Add">
+    </form>
+        
+    </body>
+    
+    
+    
