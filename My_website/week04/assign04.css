@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-image: url('../Krait_blue.jpg');
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 20px;
+    background-size: 100% 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* Style the header */
+  .header {
+    grid-area: header;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: fit-content;
+    z-index: -1;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(0, 7, 15);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+  /* search box */
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 1px;
+  font-size: 17px;
+  }
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+  
+  /* Style the content */
+  .content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 2000px;
+  }
+  
+  .middle,
+  .right {
+    padding: 10px;
+    height: 1500px;
+  }
+  
+  /* Style the left navigaiton */
+  .left {
+    background-color: rgb(0, 7, 15);
+    color: white;
+    padding: 5px;
+    grid-area: menu;
+    position: fixed;
+    height: 100%;
+    width: 80px;
+    top: 1px;
+    left: 0;
+    z-index: 1;
+    }
+
+
+/* Side navigation links */
+.left a {
+  text-align: center;
+  float: left;
+  color: white;
+  padding: 20%;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.left a:hover {
+  background-color: #333333;
+  color: black;
+}
+  
+/* Style the middle column */
+.middle {
+ background-color: #000000;
+ left: 200px;
+ right: -25px;
+ position: sticky;
+}
+  
+/* Style the right column */
+.right {
+ grid-area: right;
+ text-align: center;
+ width: 300px;
+ right: 0px;
+ position: static;
+}
+  
+/* Style the footer */
+.footer {
+ grid-area: footer;
+ color: white;
+ background-color: rgba(0, 0, 0, .7);
+ padding: 10px;
+ text-align: center;
+ z-index: 1;
+}
+  
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header' 
+    'menu middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+} 
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  /* Going to play with more for assign05 
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'left left left left left left'
+        'header header header header header header' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }*/

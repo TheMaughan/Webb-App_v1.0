@@ -1,0 +1,135 @@
+
+
+#flex_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 1rem;
+}
+
+#flex_second { display: flex; }
+#flex_second form { width: 100%; }
+
+.form-row{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-row fieldset{
+    display:flex;
+    flex-direction:column;
+}
+
+/* There were several media sections for the small viewport, so I combined them all: */
+@media screen and (max-width: 600px) {
+/* I don't know who wrote this portion of the code, but it's the best version */
+    #grid_first {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1rem;
+     }
+
+   #grid_second {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 100px;
+      grid-gap: 1rem;
+      justify-content: stretch;
+   }
+}
+
+/* I combined this screen size also and worked out the bugs: */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+    #grid_first {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+     }
+
+   #grid_second {
+        display: grid;  
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+   }
+
+   #grid_second > div {
+    display: inline-flex;
+    flex-wrap: wrap;
+   }
+
+   /* I cannot seem to get box1 to span the rows, so I doubled the height */
+   .box1 {
+    min-height: 200px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; /* This line of code isn't workding, I've tried several different versions */
+    }
+
+    /* I've tried to get all of the below boxes to have an equal width, but I've failed to figure it out */
+    /* The box9's contents are messing it all up */
+    .box2, .box3, .box4, .box5,
+    .box6, .box7, .box8, .box9 {
+        min-width: 250px;
+        min-height: 100px;
+    }
+
+    .box9 {
+        justify-content: center; /* flex items to display in the center */
+    }
+
+    .flex_div {
+        display: flex;
+        font-size: medium;
+    }
+        
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+    #grid_first {
+       display: grid;
+       grid-template-columns: auto auto auto auto;
+       grid-gap: 1rem;
+       justify-content: stretch;
+    }
+
+    #grid_first > div {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    #grid_second {
+        display: grid;
+        grid-template-areas: 'box1 box1 box1';
+        grid-gap: 1rem;
+    }
+
+    #grid_second > div {
+        display: inline-flex;
+        flex-wrap: nowrap;
+       }
+    
+    /* I cannot seem to get box1 to span the rows, so I doubled the height */
+    .box1 {
+        grid-area: box1;
+        grid-row: 1 / span 2; /* This line of code isn't workding, I've tried everything I could */
+        min-height: 200px;
+    }
+    
+    /* I've tried to get all of the below boxes to have an equal width, but I've failed to figure it out */
+    /* The box9's contents are messing it all up */
+    .box2, .box3, .box4, .box5,
+    .box6, .box7, .box8, .box9 {
+        min-height: 100px;
+        min-width: 300px;
+        flex-grow: 2;
+    }
+    
+    .box9 {
+        justify-content: center;
+    }
+
+    .flex_div {
+        font-size: medium;
+    }
+}

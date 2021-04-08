@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+   <style> /* #0 Austin Earl*/
+      @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+      
+        body { 
+         font-size:1em;
+         font-family: 'Anton', sans-serif;
+         background: rgb(195,195,208);
+         background: linear-gradient(149deg, rgba(195,195,208,1) 0%, rgba(114,89,161,1) 52%, rgba(0,212,255,1) 100%) no-repeat center center fixed;
+         text-shadow: 2px 2px 2px rgb(87, 79, 87);
+        }
+  
+        .document {
+          margin-right: 261px;
+          padding: 20px;
+         /* background-size: auto; */
+         
+        }
+  
+        #sidebar {
+          position:absolute;
+          margin-right: 0px;
+          padding: 10px;
+          top: 0;
+          right: 0;
+          float: left ;
+          width: 260px;
+          display: block;
+          height: 100%;
+          outline-style: double;
+          outline-color: rgb(71, 12, 59);
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+  
+        #menuBar{
+        margin-left: auto;
+          
+         
+        }
+        #menuBarList li{
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 16px;
+          text-decoration: underline;
+        }
+        #menuBarList li:hover{
+          background-color: rgba(255, 255, 255, 0.247);
+          color:white;
+        }
+        #text{
+          display:inline-block;
+        }
+     </style>
+    <style> /* #1 - Journey Curtis*/
+      #movingbox {
+         width: 150px;
+         Height: 150px;
+         background: blue;
+         position: relative;
+         animation: move 8s infinite;
+      }
+​
+      @keyframes move {
+         from { left: 0px;
+         to { left: 1130px;
+      }
+​
+      #title {
+         font-size: larger;
+         font-family: fantasy;
+         background
+      }
+​
+      #text {
+         font-size: 18px;
+         font-style: normal;
+         font-family: fantasy;
+         background-color: blanchedalmond;
+      }
+​
+      #howwehelped {
+         background-color: beige;
+         font-family: cursive;
+      }
+​
+      #bottom {
+         background-color: red;
+      }
+​
+      body { 
+         font-size:20px;
+         background-color: darkcyan;
+​
+      }
+	</style>
+    <style> /* #2 */
+	   body { font-size:12px; }
+	</style>
+    <style> /* #3 */
+      @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+        body { 
+        font-family: 'Potta One', cursive;
+        font-size: .9em; 
+        background-color: rgb(175, 92, 201);
+        /* background: rgb(195,195,208); */
+        /* background: linear-gradient(149deg, rgba(195,195,208,1) 0%, rgba(114,89,161,1) 52%, rgba(0,212,255,1) 100%); */
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 100%; 
+        }
+        #title {
+          text-align: center;
+        }
+        #menuBar{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          height: 30px;
+          width: 40%
+        }
+        #menuBarList li{
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 16px;
+          text-decoration: underline;
+        }
+        #menuBarList li:hover{
+          background-color: rgba(204, 197, 197, 0.534);
+        }
+        #text{
+          display:inline-block;
+        }
+        #text h1{
+          text-shadow: 2px 2px 5px white;
+        }
+        
+     </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            		and even the layout of the page.You can change the layout of this page by selecting different 
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Stylesheet descriptions</h1>
+            <p>Stylesheet 1: Austin's Stylesheet<br>
+               Stylesheet 2: Contains moving box animation, different background color, and various font changes. 
+               Some of the text has backgrounds as well. Made by Journey<br>
+               Stylesheet 3: Brandon's Stylesheet
+               Stylesheet 4: Shared stylesheet
+            </p>
+         </div> <!-- text -->
+         <div id="movingbox"></div>
+         <div id="howwehelped">
+            <h4>How we helped each other</h4>
+            <p>Journey- I helped out by posting a lot of things I found on our slack group discussion! 
+               I also worked Austin to get a time set up so we could coordinate some more.<br>
+            </p>
+         </div>
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by Saturday, January 23.</div>
+      </div> <!-- document -->
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>

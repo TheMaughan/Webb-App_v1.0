@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="assign04.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 04</title>
+
+<style>
+/* Style the header */
+.header {
+  background-image: url('./Bill_Shipyard.jpg');
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: center;
+  border: 1px solid #2196F3;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
+}
+
+.h-center {
+  position: fixed;
+  text-align: center;
+  top: 15%;
+  width: 100%;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+.localnav {
+  color: white;
+  text-decoration: none;
+}
+
+.right {
+  background-color: rgba(0, 99, 230, 0.9);
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.middle p{
+  display: block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.middle h3{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+/* The grid container */
+.m-g-1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0px;
+  padding: 20px;
+}
+.m-g-index {
+  width: 250px;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border: 1px solid rgba(131, 0, 253, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+div.container {
+  padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="../index.html">Assignment Index</a>
+  <a href="./assign04.html" class="active">Bill's Ships Homepage</a>
+  <a href="./assign04_2.html">Ship Stats</a>
+  <div class="search-container">
+    <form action="search-container">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="header">
+    <h1 class="h-center">Bill's Used Ships</h1>
+  </div>
+  
+  <!-- left local navigation bar -->
+  <div class="left">
+    <a href="../week02/assign02.html">HTML</a>
+    <a href="../week03/assign03.html">CSS</a>
+    <a href="./week04/assign04.html">Bill's Ships</a>
+    <a href="../week05/assign05.html">Week 05</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="middle">
+    <h3>Ships</h3>
+    <p>Like New!!</p>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="ASP_Explorer.jpg" alt="ASP" style="width:100%">
+          <div>
+            <p>ASP EXPLORER: 6,000,000 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="Cobramk3.jpg" alt="cobra" style="width:100%">
+          <div>
+            <p>COBRA MK III: 300,000 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="Courier.jpg" alt="Courier" style="width:100%">
+          <div>
+            <p>IMPERIAL COURIER: 2,542,000 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <p>Bill's Ships = no BS!!</p>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="Eagle.png" alt="eagle" style="width:100%">
+          <div>
+            <p>IMPERIAL EAGLE: 110,800 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="hauler.jpg" alt="hauler" style="width:100%">
+          <div>
+            <p>HAULER: 52,720 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="python.jpg" alt="python" style="width:100%">
+          <div>
+            <p>PYTHON: 56,978,000 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <p>Best offer also acepted</p>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="Type-2_ad.jpg" alt="Mamba" style="width:100%">
+          <div>
+            <p>Type-2: 320,000 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="Type-9.jpg" alt="Mamba" style="width:100%">
+          <div>
+            <p>Type-9 HEAVY: 76,555,840 <span style="color: gray;">cr</span></p>
+          </div>
+        </div>
+        <div class="m-g-index">
+          <img src="Join_Fleet_ad.jpg" alt="Mamba" style="width:100%">
+          <div>
+            <p>Join the Fleet Today!!!</p>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right">Ad Column
+    <p>Get a Mamba!</p>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="Mamba_ad.jpg" alt="Mamba" style="width:100%">
+        </div>
+      </div>      
+    </div>
+    <p>Mini Deathstar = Corvette</p>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="Corvette_ad.jpg" alt="Corvette" style="width:100%">
+        </div>
+      </div>      
+    </div>
+    <div class="main-middle">
+      <div class="m-g-1">
+        <div class="m-g-index">
+          <img src="Python_ad.jpg" alt="Mamba" style="width:100%">
+        </div>
+      </div>      
+    </div>
+  </div>
+    
+  <div class="footer">
+  <p class="center">Webpage made for CS213</p>
+  <p class="center">&copy; TheMon 2021</p>
+  </div>
+</div>
+</body>
+</html>

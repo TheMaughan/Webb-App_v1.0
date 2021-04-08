@@ -1,36 +1,31 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+My main work is found in the 'mysite' folder, I only have one webpage that displays right now, but I have lots more webpages that I've made and are ready to display.
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+Anything in the 'repel-samples' folder was not written by me. Everything in that folder was created by someone else and it's here only as a reference example of how to use the Django script. I will delete the repl-samples folder when I don't need to use them as a reference anymore.
 
-{Describe your purpose for writing this software.}
+The 'Project1' folder is where did most of my experiments and is my 'hello world' project.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+The 'My_website' folder is where I'm storing all of my webpages for now, none of them will display through Django right now. In this folder are fully realized CSS and HTML templates. I also have some front-end JavaScript apps and I will implement them soon.
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+I deleted a lot of stuff and I am resolved to begin again from scratch. I had some webpages, but I wasn't satisfied with how little I knew how to use Djano
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+I'm using mostly Visual Studio Code and the Cromium Brave web browser. 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 
-* [Web Site Name](http://url.link.goes.here)
+* [Real Python Django Tutorial](https://realpython.com/get-started-with-django-1/#the-structure-of-a-django-website)
+* [Django Book Website](https://djangobook.com/)
+* [How to implement admin access to Django](https://www.tutorialspoint.com/django/django_admin_interface.htm)
+* [This is a Repl that I branched, I'm using this code to see how a fully realized Djanto site looks like](https://replit.com/@TheMaughan/CSE310WebAppWorkshop2Solved#manage.py)
+* [YouTube Django Tutorial](https://www.youtube.com/watch?v=B_zpq5NJOt8)
 * [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-* Item 1
-* Item 2
-* Item 3
+To finish this project.

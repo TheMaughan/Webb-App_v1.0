@@ -1,0 +1,116 @@
+/* Top menu section */
+/* all objects here start with 'i-' */
+i-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding: auto;
+    font-family: Verdana,sans-serif;
+  }
+  i-li.menu i-a{
+    float: left;
+    font-family: Verdana,sans-serif;
+  }
+  i-li a, .i-dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+  }
+  i-li a:hover, .i-dropdown:hover .i-dropbtn{
+    background-color: #0277bd;
+    box-shadow: 0px 0px 5px #000000 inset;
+  }
+  i-li a, .i-dropdown{
+    display: inline-block; 
+  }
+  .i-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  }
+  .i-dropdown-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .i-dropdown-content i-a:hover {background-color: rgb(77, 77, 77)}
+
+  .i-dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+  } /* End of Menu CSS */
+
+  
+  /* For content lists */
+  i-ul.index{
+    background-color: rgba(0,0,0,1);
+    font-family: Verdana,sans-serif;
+   }
+
+   /* For generic 'textarea' */
+  i-textarea{
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #666666 inset;
+    text-indent: 5px;
+      width: 250px;
+      height: 100px;
+   }
+
+   .i-custom-select {
+    font-family: Arial;
+  }
+/* --- User Interaction: --- */
+  /* For generic buttons */
+  .i-button {
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    padding: 15px 32px;
+  }
+  .i-s-button {
+    font-size: 16px;
+    margin: 2px 1px;
+    border-radius: 6px;
+    padding: 7px 16px;
+  }
+  .i-button, .i-s-button{
+    background-color: rgb(0, 23, 36);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana,sans-serif;
+    box-shadow: 0px 0px 10px #000000 inset;
+}
+
+.i-button, .i-s-button, .i-hover-glow{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.i-button:hover {
+    background-color: rgb(155, 47, 4);
+    color: white;
+    box-shadow: 0 0 25px orange inset, 0 0 5px orangered inset;
+}
+.i-hover-glow:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-shadow: 0 0 25px rgb(255, 94, 0), 0 0 5px rgb(255, 236, 127);
+}
+
+.h-center{
+  top: 10%;
+}

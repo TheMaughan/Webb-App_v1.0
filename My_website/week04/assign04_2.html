@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="assign04.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ship Stats</title>
+
+<style>
+/* Style the header */
+.header {
+  background-image: url('./Andaconda_specs.jpg');
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: center;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.h-center {
+  position: fixed;
+  text-align: center;
+  top: 25%;
+  width: 100%;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.topnav a.active {
+ background-color: #2196F3;
+ color: white;
+}
+.localnav {
+  color: white;
+  text-decoration: none;
+}
+
+.m {
+  grid-area: m;
+  
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(48, 48, 48);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.m p{
+  display: block;
+  color: grey;
+  padding: 10px;
+  text-align: center;
+}
+
+.m h3{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.r {
+  background-color: darkslategrey;
+  grid-area: r;
+  width: 100%;
+  height: 500px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.r p{
+  display: block;
+  color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.r h3{
+  text-align: center;
+  color: lightblue;
+  font-size: 40px;
+}
+
+/* The grid container */
+.m-g-1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0px;
+  padding: 20px;
+}
+.m-g-index {
+  width: 250px;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border: 1px solid rgba(131, 0, 253, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+div.container {
+  padding: 10px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header' 
+    'm m m m m m'
+    'r r r r r r'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+}
+
+/* The grid container */
+.m-g-1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 0px;
+  padding: 20px;
+}
+.m-g-index {
+  width: 250px;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border: 1px solid rgba(131, 0, 253, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+div.container {
+  padding: 10px;
+}
+
+.index {
+  width: 50%;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+</style>
+
+<script src="#"></script>
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="../index.html">Assignment Index</a>
+  <a href="./assign04.html">Bill's Ships Homepage</a>
+  <a href="./assign04_2.html" class="active">Ship Stats</a>
+  <div class="search-container">
+    <form action="search-container">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="header">
+    <h1 class="h-center">Ship Stats</h1>
+  </div>
+  
+  <!-- left local navigation bar -->
+  <div class="left">
+    <a href="../week02/assign02.html">HTML</a>
+    <a href="../week03/assign03.html">CSS</a>
+    <a href="./week04/assign04.html">Bill's Ships</a>
+    <a href="../week05/assign05.html">Week 05</a>
+  </div>
+
+
+  
+    <!-- Main Content -->
+    <div class="m">
+      <h3>Ships</h3>
+        <span class="index">
+          <img src="Ship_statsheet.png" alt="Ship_Stats" class="center">
+        </span>
+        <div>
+          <p>Average Ship Stats</p>
+          <p>Best viewed on a larger screen</p>
+        </div>
+    </div>
+
+    <div class="r">
+      <h3>Section</h3>
+      <p>Lots of text</p>
+    </div>
+
+  <div class="footer">
+    <p class="center">Webpage made for CS213</p>
+    <p class="center">&copy; TheMon 2021</p>
+  </div>
+  
+</div>
+</body>
+</html>

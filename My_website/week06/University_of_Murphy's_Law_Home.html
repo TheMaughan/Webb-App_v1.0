@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Murphy's Law School - Expect the Obvious Result">
+    <link rel="stylesheet" type="text/css" href="./University.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Murphy's Law</title>
+<style>
+#header {
+  background-image: url('../web-pictures/dumpster-fire-month.png');
+  height: 400px;  
+}
+
+.middle {
+  background-image: url('../web-pictures/m-l-s_logo.jpg');
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
+}
+
+.rain {
+  display: flex;
+  background-image: url('../web-pictures/rain.gif');
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cute-end {
+  background-image: url('../web-pictures/cute-end.jpg');
+  color: #f1f1f1;
+}
+
+.sponser {
+  background-image: url('../web-pictures/Never-Forget.jpg');
+}
+
+ /* The grid container */
+ #grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer';
+  } 
+</style>
+
+<script src="#"></script>
+
+</head>
+
+<body>
+
+<section id="topnav">
+  <a href="./University_of_Murphy's_Law_Home.html">
+    <img src="../web-pictures/law-school_little-pic.jpg" alt="University of Murphy's Law" width="100">
+  </a>
+  <div id="topnav">
+    <a href="./University_of_Murphy's_Academics.html">Academics</a>
+    <a href="./University_of_Murphy's_Arts.html">Arts</a>
+    <a href="./University_of_Murphy's_Athletics.html">Athletics</a>
+  </div>
+</section>
+
+<!--  Header of Page, Welcome :)  -->
+<section id="grid-container">
+
+  <section id="header" class="b-cover">
+    <h2 class="h-start warm-glow">University of</h2>
+    <h2 class="h-end warm-glow">Murphy's Law</h2>
+  </section>
+
+  <!--  Local Navigation, Playing with 'Sticky' positioning -->
+  <section id="left">
+    <div>
+      <a id="left" href="#">University</a>
+    </div>
+    <div>
+      <a id="left" href="#UML Logic">UML Logic</a>
+    </div>
+    <div>
+      <a id="left" href="#Enroll-Today">Enroll Today!</a>
+    </div>
+    
+    
+    <!--  The 'margin-top' helps with link spacing -->
+    <a id="left" style="margin-top: 700px;" href="#Learn">Learn More</a>
+  </section>
+
+  <!--  Main Content Container  -->
+  <div class="middle b-contain">
+
+    <!--  The UML Logic Section - Expect Murphy's Law  -->
+    <section class="container-b info-blue rain b-cover" id="content">
+      <h2 class="txt-big" id="UML Logic" style="margin-top: -10%;">Murphy's Law</h2>
+      <div>
+        <p style="margin-left: 60%;">What can to wrong</p>
+      </div>
+      <p style="text-transform: uppercase;">Will go wrong</p>
+    </section>
+    <!-- Grid Space -->
+    <section id="c-grid">
+      <div class="top">
+        <h2 class="warm-glow txt-big">Welcome to Another 2020!</h2>
+      </div>
+      <div>
+        <img class="L-side" src="../web-pictures/corona.gif" alt="2020-Happiness">
+      </div>
+      <div class="R-side">
+        <p>Our Cinical but Realistic logic proves correct again!</p>
+           <p>You thought that 2020 was bad?</p>
+          <p>The 20th decade has just begun...</p>
+      </div>
+    </section>
+
+    <!--  Enroll Section - Advertise  -->
+    <section class="info-red" id="c-grid">
+      <div class="top">
+        <h2 id="Enroll-Today txt-big">Never be Unprepared!</h2>
+      </div>
+      <div>
+        <img class="R-side" src="../web-pictures/IMG_2219.jpg" alt="Believe-In-Yourself!">
+      </div>
+      <div class="L-side">
+        <p>Our negative school of thought can</p>
+        <p>always predict the future while</p>
+        <p>assuming the worst!</p>
+      </div>
+    </section>
+    <!-- Advertise container -->
+    <div class="container-b warm-glow cute-end b-cover">
+      <div>
+        <h1 style="text-align: center;">The Future is Warm</h1>
+      </div>
+      <section id="content">
+        <div>
+          <p>We got the sticks</p>
+        </div>
+        <div style="margin-left: 50%; margin-top: 50%;">
+          <p>You bring the marshmallows</p>
+        </div>
+      </section>
+    </div>
+
+    <!--  Enroll Section - Advertise  -->
+      
+    <!-- Grid Space -->
+    <section id="c-grid">
+      <div class="top">
+        <h2 id="Learn" class="warm-glow txt-big">Be Informed!</h2>
+      </div>
+      <div>
+        <img class="L-side" src="../web-pictures/law-school_little-pic.jpg" alt="2020-Happiness">
+      </div>
+      <div class="space-around">
+        <a href="./University_of_Murphy's_Athletics.html" class="button warm-glow">Check out our Athletics Program!</a>
+        <a href="./University_of_Murphy's_Athletics.html" class="button warm-glow">Check out our Arts Programs!</a>
+        <a href="./University_of_Murphy's_Athletics.html" class="button warm-glow">Check out our Academics Programs!</a>
+      </div>
+    </section>
+
+    <!-- Grid Space -->
+    <section id="c-grid" class="sponser b-cover">
+      <div class="top">
+        <h2 id="Learn" class="txt-big white-txt warm-glow background-color">Thank You!</h2>
+      </div>
+      <div class="L-side">
+        <p>We would like to thank our Sponsers</p>
+        <h2>'Conspiracy Dealer'</h2>
+        <h5>&</h5>
+        <h2>'The Tokyo Olympics'</h2>
+        <p>For their support & information!</p>
+      </div>
+      <div class="mid">
+        <h1></h1>
+      </div>
+      <div>
+        <a href="../week05/assign05.html">
+          <img class="R-side" src="../web-pictures/IMG_2723.jpg" alt="Conspiracy Dealer">
+        </a>
+      </div>      
+    </section>
+  </div>
+
+  <!--  Advertise - or display nothing, depends on page  -->
+  <div class="right"></div>
+
+  <!--  The Foot, Leagal stuff and *Assignment Index* link -->
+  <div class="footer">
+    <p>Made For CS213</p>
+    <p>&copy; TheMon - February 2021</p>
+    <a href="../index.html" class="s-button hover-glow">Assignment Index</a>
+  </div>
+</section>
+</body>
+</html>

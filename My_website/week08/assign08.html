@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link href="../globalStyle.css" rel="stylesheet" type="text/css"/>
+  <meta name="description" content="Murphy's Law School - Expect the Obvious Result"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Validator</title>
+  <style>
+    
+.middle {
+  /*background-image: url('../web-pictures/m-l-s_logo.jpg');*/
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
+  height: 700px;
+  color: white;
+}
+.footer {
+  text-align: center;
+  color: white;
+  height: 227px;
+}
+
+ /* The grid container */
+ #grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left middle middle middle middle right' 
+      'footer footer footer footer footer';
+  } 
+
+  input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    
+  }
+  .c-grid {
+    display: grid;
+    grid-template-areas: 
+      'top top top'
+      'L-side mid R-side'
+      'bottom bottom bottom';
+    border:rgba(47, 46, 92, 0.4);
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+  }
+  .no-bull {
+    list-style-type: none;
+  }
+
+  textarea { 
+    width: 200px;
+    height:150px;
+    line-height:20px;
+    padding-top: 20px;
+    text-align: left;
+}
+  </style>
+
+</head>
+
+<body>
+  <ul>
+    <li class="menu"><a class="active" href="../week02/assign02.html">Home</a></li>
+    <li class="dropdown">
+      <a href="../index.html" class="dropbtn">Assignment Index</a>
+      <div class="dropdown-content">
+        <a href="../week02/assign02.html">W-02 (HTML)</a>
+        <a href="../week03/assign03.html">W-03 (CSS)</a>
+        <a href="../week04/assign04.html">W-04 Used Ships!</a>
+        <a href="../week05/assign05.html">W-05 Invited!</a>
+        <a href="../week06/University_of_Murphy's_Law_Home.html">W-06 Enroll at UML!</a>
+        <a href="../week07/assign07.html">Morgage Calculator</a>
+        <a href="../week08/assign08.html">Form Validator</a>
+        <a href="../week09/assign09.html">Week 09</a>
+        <a href="../week10/assign10.html">Week 10</a>
+        <a href="../week11/assign11.html">Week 11</a>
+        <a href="../week12/assign12.html">Week 12</a>
+        <a href="../week13/assign13.html">Week 13</a>
+      </div>
+    </li>
+    <li style="float:right"><a class="active" href="about.html">About</a></li>
+  </ul>
+
+  <!--  Header of Page, Welcome :)  -->
+  <section id="grid-container">
+    <h2 class="center">Middle Earth Markets</h2>
+      
+        <!--  Main Content Container  -->
+    <div class="c-grid" id="Main_body">
+      <!--  Market Items: -->
+      <form name="market_payment" id="market_payment" onsubmit="submitPayment()"></form>
+        <div class="no-bull" id="market">
+          <h2>Market Items:</h2>
+          <section id="market_items">
+            <ul>
+              <li><b>Sword</b>: <input type="checkbox" name="1200.50" onclick="addTotal()" id="item_1"/><br></li>
+              <li><label for="item_1" id="dis1">$1200.50</label><br></li><br>
+
+              <li><b>Shield</b>: <input type="checkbox" name="2243.75" onclick="addTotal()" id="item_2"/><br></li>
+              <li><label for="item_2" id="dis2">$2243.75</label><br></li><br>
+
+              <li><b>Wizard Staff</b>: <input type="checkbox" name="324200.00" onclick="addTotal()" id="item_3"/><br></li>
+              <li><label for="item_3" id="dis3">$324200.00</label><br></li><br>
+
+              <li><b>The One Ring</b>: <input type="checkbox" name="1000000000.00" onclick="addTotal()" id="item_4"/><br></li>
+              <li><label for="item_4" id="dis4">$1000000000.00</label><br></li><br>
+              <li><p id="display_reciptes"></p></li>
+              <li><p id="total"></p></li>
+            </ul>
+          </section>
+          <!--script src="receipt.js"></script-->
+        </div>
+      <!-- This section is for the assignment: -->
+          <div class="c-grid">
+            <div class="s-flex">
+              <ul class="no-bull">
+                  <div class="c-grid">
+                    <li><input name="first_name" type="text" id="first_name" placeholder="First Name" required/><br></li>
+                    <li><input name="last_name" type="text" id="last_name" placeholder="Second Name" required/><br></li>
+                  </div>
+                  <li><p id="validate"></p><br></li>
+
+                  <div class="c-grid">
+                    <div><!-- Address Input -->
+                      <li>Shipping Address<br></li>
+                      <li><textarea name="address" type="textarea" id="address" cols="20" rows="10" required 
+                            placeholder="# Street,
+                                          (optional)Unit #,
+                                          City, State     zip"></textarea><br></li>
+                    </div>
+                    <div>
+                      <li><label for="phone" id="phone_label">Phone Number</label></li>
+                      <li><input name="phone" type="tel" inputmode="numeric" id="phone" maxlength="10" placeholder="123-456-7890" onkeyup="phoneHyphen(this)"><br></li>
+                      <li id="vPhone"></li>
+                      <li id="phone_output"></li>
+                    </div>
+                  </div>
+                  <table>
+                      <p id="vCard">Selected Card Carrier:</p>
+                      <tr>
+                        <th>Visa |</th>
+                        <th>Master |</th>
+                        <th>Discover |</th>
+                        <th>American Express</th>
+                      </tr>
+                      <tr>
+                        <th><input name="card" type="radio" id="visa"/></th>
+                        <th><input name="card" type="radio" id="master"/></th>
+                        <th><input name="card" type="radio" id="discover"/></th>
+                        <th><input name="card" type="radio" id="americaExpress"/></th>
+                      </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>Credit Card Number: <input name="credit_card" id="credit_card" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" onkeyup="addHyphen(this)"></th>
+                    </tr>
+                    <p id="v2Card">Only input numbers, all input feilds auto format</p>
+                    <tr>
+                      <th>Expiration Date: <input name="exp_date" id="exp_date" inputmode="numeric" maxlength="6" placeholder="mm/yyyy" onkeyup="addForSlash(this)" required></th>
+                    </tr>
+                    <p id="vDate"></p>
+                  </table>
+              </ul>
+              <button type="submit" id="submit" class="i-s-button i-hover-glow">Validate</button>
+              <button type="button" id="clear" class="i-s-button i-hover-glow">Reset</button>
+            </div>
+          </div>
+        </form>
+        <script src="validate.js"></script>
+  </section>
+<script src="../jquery-3.6.0.min.js"></script>
+</body>
+</html>

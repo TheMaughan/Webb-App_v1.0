@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link href="./input.css" rel="stylesheet" type="text/css"/>
+  <link href="../global-layout.css" rel="stylesheet" type="text/css"/>
+  <meta name="description" content="Murphy's Law School - Expect the Obvious Result"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Morgage Calculator</title>
+
+</head>
+
+<body>
+
+<!--  Header of Page, Welcome :)  -->
+<section id="grid-container">
+  <h2>Calculator Examples</h2>
+
+  <!--  Local Navigation, Playing with 'Sticky' positioning -->
+  <div id="left"></div>
+     
+      <!--  Main Content Container  -->
+  <div class="middle b-contain">
+    <!-- Advertise container -->
+    <section class="c-grid">
+      <div>
+        <h2>Multiples Calculator</h2>
+        <form name="calculator">
+          <div class="c-grid">
+            <label for="textarea_1">Multiples of...</label>
+            <input name="textarea_1" type="number" id="textarea_1" placeholder="Enter Number..."/><br>
+          </div>
+          <div>
+            <button id="btn_1" class="i-s-button i-hover-glow">Clear</button>
+          </div>
+          <div>
+            <p id="output_1"></p>
+            <ul class="no-bull" id="output_2"></ul>
+          </div>
+          
+        </form>
+        <script src="Multiple.js"></script>
+      </div>
+
+      <!-- This section is for the assignment: -->
+      <div>
+        <h2>Morgage Calculator</h2>
+        <form name="morgage_calculator">
+          <div class="c-grid">
+            <div class="s-flex">
+              <ul class="no-bull">
+                  <li><b>APR (Annual Percentage Rate)</b>: <input name="apr" type="number" id="apr" value="5.25" step=".01" placeholder="APR range: 0.00% - 25.00%"/><br></li>
+                  <li><label for="apr" id="apr_error"></label><br></li>
+
+                  <li><b>Lone Term (In Years)</b>: <input name="term" type="number" id="term" value="10" step="1" placeholder="Max Years is 40"/><br></li>
+                  <li><label for="term" id="term_error"></label><br></li>
+
+                  <li><b>Lone Amount</b>: <input name="amount" type="number" id="amount" value="100000" step=".01" placeholder="$0.00"/><br></li>
+                  <li><label for="amount" id="amount_error"></label><br></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button type="button" id="calculate" class="i-s-button i-hover-glow">Calculate</button>
+            <button type="button" id="clear" class="i-s-button i-hover-glow">Clear</button>
+          </div>
+          <p id="test"></p>
+          <p id="payment"></p>
+          <script src="m-calc.js"></script>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!--  Advertise - or display nothing, depends on page  -->
+  <div class="right"></div>
+
+  <!--  The Foot, Leagal stuff and *Assignment Index* link -->
+  <div class="footer">
+    <p>Footer</p>
+    <a href="../index.html" style="text-decoration: none; color: white;">Assignment Index</a>
+  </div>
+</section>
+</body>
+</html>
